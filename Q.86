@@ -1,0 +1,13 @@
+#include<stdio.h>
+#include<string.h>
+int Read_and_len() {
+	char str[100];
+	printf("Enter your string\n");
+    gets(str);
+   int length = strlen(str);
+   printf("Length of string is %d",length);
+}
+int main() {
+	Read_and_len();
+    return 0;
+}

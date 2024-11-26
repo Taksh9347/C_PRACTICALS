@@ -1,0 +1,23 @@
+#include<stdio.h>
+int fib(int n){
+	if(n==0){
+		return 0;// first term is zero
+	}
+	if(n==1){
+		return 1;// second term is one
+	}
+	int fibNm1 = fib(n-1);
+	int fibNm2 = fib(n-2);
+	int fibN  = fibNm1 + fibNm2;
+	return fibN;
+}
+
+int main(){
+	int n;
+	printf("Enter N \n");
+	scanf("%d",&n);
+	for(int i=n;i>=1;i--)
+	{
+		printf("%d,",fib(n-i));
+	}
+}

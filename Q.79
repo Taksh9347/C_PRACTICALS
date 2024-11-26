@@ -1,0 +1,20 @@
+#include<stdio.h>
+int Do_Swap(int *x,int *y)
+{
+	int t;
+	t=*x;
+	*x=*y;
+	*y=t;
+	
+}
+ int main()
+{
+	int a,b;
+	printf("Enter a \n");
+	scanf("%d",&a);
+	printf("Enter b \n");
+	scanf("%d",&b);
+	Do_Swap(&a,&b);
+	printf("After swapping a=%d  ",a);
+	printf("b=%d",b);
+}

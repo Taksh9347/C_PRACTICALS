@@ -1,0 +1,27 @@
+#include<stdio.h>
+int fact(int n){
+	if(n==0){
+		return 1;
+	}
+	int factNm1 = fact(n-1);
+	int factN = factNm1 * n;
+	return factN;
+ }
+int main()
+{
+	int k,n,r;
+    printf("Enter N for NCR \n");
+	scanf("%d",&n);
+	printf("Enter R for NCR \n");
+	scanf("%d",&r);
+	if(n<1 || r<0){
+		printf("Invalid combination");
+	}
+	else{
+		k = fact(n)/(fact(n-r)*fact(r));
+	printf("combination is %d ",k);
+	}
+	return 0;
+}
+
+	
